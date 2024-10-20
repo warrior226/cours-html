@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- titre de la page  -->
+    <title>Cours HTML de zéro</title>
+    <!-- Icone de l'onglet -->
+    <link rel="shortcut icon" href="./logo-html.png" />
+  </head>
+  <body>
+    <!-- I set first the navigation -->
+    <nav>
+      <!-- set list tag -->
+      <ul>
+        <li>Accueil</li>
+        <li>Boutique</li>
+        <li>
+            <a href="#form">Formulaire</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- set the header -->
+    <header>
+      <!-- un seul h1 par page -->
+      <h1>Ceci est le titre principale</h1>
+      <p>
+        Texte Classique <em>texte en italique</em>
+        <strong>Text en gras</strong>.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fuga
+        culpa veniam fugit harum, possimus repellat, facere necessitatibus nisi
+        non ut voluptas ipsum autem velit temporibus excepturi, itaque officia?
+        Consectetur.
+      </p>
+    </header>
+    <!-- le corps ou la partie principale de notre site  -->
+    <main>
+      <section>
+        <h2>Order List</h2>
+        <ol>
+          <li>Nom</li>
+          <li>Prenom</li>
+          <li>Age</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3>Image en HTML</h3>
+        <img src="./golden-state.jpeg" alt="Golden State Warrior Big 3" />
+        <!-- l'Alt est pour l'accessibilite -->
+        <div>
+          <h4>Tableaux</h4>
+          <table border="4" cellpadding="10" cellspacing="10">
+            <!-- thead est pour l'en-tete du tableau -->
+            <thead>
+              <tr>
+                <th>Colonne 1</th>
+                <th>Colonne 2</th>
+                <th>Colonne 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <td>Cell1</td>
+              <td>Cell2</td>
+              <td>Cell3</td>
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <h5><i>&#8594;</i> Les liens</h5>
+          <!-- _blank pert de créer un nouvel onglet -->
+          <a href="https://htmlcheatsheet.com" target="_blank"
+            >HTML Cheat Sheet</a
+          >
+        </div>
+
+        <div>
+          <h6><span>🎬</span> Vidéos</h6>
+
+          <video src="./video.mp4" autoplay muted loop></video>
+        </div>
+      </section>
+
+      <section id="form">
+        <h2>Les formulaires</h2>
+        <form action="">
+          <!-- "for et id permettent de lier l'id à l'input" -->
+          <!-- input de type text -->
+          <label for="name">Nom</label>
+          <input type="text" id="name" placeholder="Entrez votre nom" /> <br />
+          <!-- input de type number -->
+          <label for="age">Entrez votre age</label>
+          <input type="number" id="age" placeholder="Entrez votre age" /> <br>
+          <!-- input de type select -->
+          <label for="genre">Genre</label>
+          <select id="genre">
+            <option value="Homme">Homme</option>
+            <option value="Femme" selected="selected">Femme</option>
+            <option value="Autre">Autre</option>
+          </select>
+          <!-- input de type radio -->
+           <div>
+            <label for="human">Human</label>
+            <input type="radio" name="type" id="human">
+
+            <label for="dog">Dog</label>
+            <input type="radio" name="type" id="dog" checked>
+           </div>
+           <textarea placeholder="Votre message ..."
+           cols="20"
+           rows="5"></textarea> <br>
+
+           <!-- input de type checkbox -->
+            <input type="checkbox" name="" id="check">
+            <label for="check">Accepter les conditions générales</label> <br>
+            <!-- ceci est un bouton -->
+            <input type="submit" value="Ceci est un bouton">
+        </form>
+        <button>Ceci est un bouton</button>
+      </section>
+    </main>
+
+    <!-- le pieds de page  -->
+    <footer>
+        <a href="mailto:patrickrayaisse14@gmail.com">Contactez-moi</a>
+        <a href="./notice.text" download="Notice">Telecharger la notice</a>
+    </footer>
+  </body>
+</html>
